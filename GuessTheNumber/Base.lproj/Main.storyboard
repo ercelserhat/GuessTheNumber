@@ -114,6 +114,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tahmin Et" id="Pl1-1e-JnE"/>
+                    <connections>
+                        <segue destination="Wup-BL-ShJ" kind="show" id="UzT-WW-eSS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQw-wd-ESe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,13 +129,48 @@
                     <view key="view" contentMode="scaleToFill" id="435-aM-cEh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rog-Fq-Atl">
+                                <rect key="frame" x="40" y="596" width="313" height="52"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OYUNA BAŞLA">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mutlu_resim" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-RF-p9a">
+                                <rect key="frame" x="30" y="123" width="333" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="UdS-Np-VgU"/>
+                                    <constraint firstAttribute="height" constant="187" id="vWO-ze-5nc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAZANDINIZ!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1X-WK-wBV">
+                                <rect key="frame" x="100" y="370" width="193" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SHT-VU-hzF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rog-Fq-Atl" firstAttribute="top" secondItem="D1X-WK-wBV" secondAttribute="bottom" constant="190" id="1ij-r5-MwX"/>
+                            <constraint firstItem="0AQ-RF-p9a" firstAttribute="centerX" secondItem="435-aM-cEh" secondAttribute="centerX" id="C5b-Hy-yIC"/>
+                            <constraint firstItem="rog-Fq-Atl" firstAttribute="leading" secondItem="SHT-VU-hzF" secondAttribute="leading" constant="40" id="OjT-8M-4RA"/>
+                            <constraint firstItem="0AQ-RF-p9a" firstAttribute="top" secondItem="SHT-VU-hzF" secondAttribute="top" constant="20" id="U1F-5y-wCb"/>
+                            <constraint firstItem="rog-Fq-Atl" firstAttribute="centerX" secondItem="435-aM-cEh" secondAttribute="centerX" id="aI4-pv-evB"/>
+                            <constraint firstItem="D1X-WK-wBV" firstAttribute="top" secondItem="0AQ-RF-p9a" secondAttribute="bottom" constant="60" id="kcv-Qy-g9f"/>
+                            <constraint firstItem="D1X-WK-wBV" firstAttribute="centerX" secondItem="435-aM-cEh" secondAttribute="centerX" id="xPA-SI-gLP"/>
+                            <constraint firstItem="SHT-VU-hzF" firstAttribute="trailing" secondItem="rog-Fq-Atl" secondAttribute="trailing" constant="40" id="xRe-e8-Jwl"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RUI-F3-yj8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoA-hG-Z1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="4"/>
+            <point key="canvasLocation" x="2296.9465648854962" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QYC-T8-BTP">
@@ -154,6 +192,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mutlu_resim" width="48" height="48"/>
         <image name="zar_resim" width="48" height="48"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
