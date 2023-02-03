@@ -16,6 +16,8 @@
 		7AA288F2298D998400D4604C /* GuessTheNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA288F1298D998400D4604C /* GuessTheNumberTests.swift */; };
 		7AA288FC298D998400D4604C /* GuessTheNumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA288FB298D998400D4604C /* GuessTheNumberUITests.swift */; };
 		7AA288FE298D998400D4604C /* GuessTheNumberUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA288FD298D998400D4604C /* GuessTheNumberUITestsLaunchTests.swift */; };
+		7AA2890B298D9ABC00D4604C /* TahminEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2890A298D9ABC00D4604C /* TahminEkraniVC.swift */; };
+		7AA2890D298D9ACC00D4604C /* SonucEkraniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2890C298D9ACC00D4604C /* SonucEkraniVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7AA288F7298D998400D4604C /* GuessTheNumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheNumberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA288FB298D998400D4604C /* GuessTheNumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheNumberUITests.swift; sourceTree = "<group>"; };
 		7AA288FD298D998400D4604C /* GuessTheNumberUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheNumberUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AA2890A298D9ABC00D4604C /* TahminEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TahminEkraniVC.swift; sourceTree = "<group>"; };
+		7AA2890C298D9ACC00D4604C /* SonucEkraniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonucEkraniVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				7AA288E3298D998300D4604C /* Assets.xcassets */,
 				7AA288E5298D998300D4604C /* LaunchScreen.storyboard */,
 				7AA288E8298D998300D4604C /* Info.plist */,
+				7AA2890A298D9ABC00D4604C /* TahminEkraniVC.swift */,
+				7AA2890C298D9ACC00D4604C /* SonucEkraniVC.swift */,
 			);
 			path = GuessTheNumber;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA2890D298D9ACC00D4604C /* SonucEkraniVC.swift in Sources */,
 				7AA288DF298D998300D4604C /* ViewController.swift in Sources */,
 				7AA288DB298D998300D4604C /* AppDelegate.swift in Sources */,
 				7AA288DD298D998300D4604C /* SceneDelegate.swift in Sources */,
+				7AA2890B298D9ABC00D4604C /* TahminEkraniVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
