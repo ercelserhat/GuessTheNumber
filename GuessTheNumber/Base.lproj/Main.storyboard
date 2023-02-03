@@ -76,7 +76,7 @@
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTTIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsR-LW-bHI">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTTIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsR-LW-bHI">
                                 <rect key="frame" x="143.66666666666666" y="323" width="106" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -95,6 +95,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnTahminEt:" destination="39h-lR-Bec" eventType="touchUpInside" id="GTB-4U-yiX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NH1-pF-DPy"/>
@@ -115,7 +118,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tahmin Et" id="Pl1-1e-JnE"/>
                     <connections>
-                        <segue destination="Wup-BL-ShJ" kind="show" id="UzT-WW-eSS"/>
+                        <outlet property="labelKalanHak" destination="KXZ-i7-BLN" id="frz-7E-41A"/>
+                        <outlet property="labelYardim" destination="OsR-LW-bHI" id="wTS-7N-3Jb"/>
+                        <outlet property="textFieldTahmin" destination="4GM-5r-2CU" id="V0E-Dl-fST"/>
+                        <segue destination="Wup-BL-ShJ" kind="show" identifier="tahminTosonuc" id="UzT-WW-eSS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQw-wd-ESe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -131,13 +137,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rog-Fq-Atl">
-                                <rect key="frame" x="40" y="596" width="313" height="52"/>
+                                <rect key="frame" x="40" y="596" width="313" height="50"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="OYUNA BAŞLA">
+                                <buttonConfiguration key="configuration" style="plain" title="TEKRAR OYNA">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnTekrarOyna:" destination="Wup-BL-ShJ" eventType="touchUpInside" id="hvE-fB-o1z"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mutlu_resim" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-RF-p9a">
                                 <rect key="frame" x="30" y="123" width="333" height="187"/>
@@ -167,6 +176,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RUI-F3-yj8"/>
+                    <connections>
+                        <outlet property="imgSonuc" destination="0AQ-RF-p9a" id="Z4R-dJ-S3f"/>
+                        <outlet property="labelSonuc" destination="D1X-WK-wBV" id="fDd-1s-aDV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoA-hG-Z1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
